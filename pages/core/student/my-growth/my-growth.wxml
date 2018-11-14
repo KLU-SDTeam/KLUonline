@@ -1,0 +1,15 @@
+<view class='main-box'>
+    <view class='title'>我的成长</view>
+    <view class='title-two'>
+        <view class='content'>目标</view>
+        <view class='content'>匹配</view>
+    </view>
+    <view class='radarContainer'>
+        <canvas class='radarCanvas' canvas-id='radarCanvas'></canvas>
+    </view>
+    <view class='bottom-box'>
+        <view class='content'>技能/专业</view>
+        <view class='content'>获奖/证书</view>
+        <view class='content'>综合测评</view>
+    </view>
+</view>

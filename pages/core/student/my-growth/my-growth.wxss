@@ -1,0 +1,60 @@
+.main-box{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(232, 223, 241);
+  overflow: hidden;
+}
+.title{
+  width: 100%;
+  height: 50rpx;
+  background-color: rgb(232, 223, 241);
+  color: rgb(119, 116, 116);
+  padding-top: 15rpx;
+  padding-bottom: 10rpx;
+  padding-left: 10rpx;
+  font-family: '微软雅黑';
+  font-size: 30rpx;
+}
+.title-two{
+  
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  height: 80rpx;
+  background-color: #d2df8a;
+  border-radius: 10px;
+}
+.content{
+  width: 50%;
+  font-size: 30rpx;
+  padding-left: 10rpx;
+  border-right: 1rpx rgb(232, 223, 241) solid;
+  padding-top: 20rpx;
+  text-align: center;
+  color: #df9191;
+}
+
+.radarContainer{
+   width:100%;
+   height:420px;
+   justify-content:center;
+   align-items: center;
+   position: relative;
+   display: flex;
+
+}
+.radarCanvas{
+   width:400px;
+   height:400px;
+   margin:0 auto;
+   position: absolute;
+}
+.bottom-box{
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  height: 80rpx;
+  background-color: #9eccf7;
+  border-radius: 10px;
+}

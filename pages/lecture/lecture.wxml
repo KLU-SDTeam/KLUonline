@@ -1,0 +1,14 @@
+<scroll-view class="page_list" scroll-y="true" bindscrolltolower="loadMore" bindscrolltoupper="refresh">
+
+  <view wx:for="{{postList}}" wx:key>
+
+    <view data-post-id="{{item.postId}}" class="item"  catchtap='onTapToDetail'>
+      <view class="news-item">
+        <view class="title">{{item.title}}</view>
+        <text class="time">{{item.time}}</text>
+        <view class="desc">{{item.desc}}</view>
+
+      </view>
+    </view>
+  </view>
+</scroll-view>

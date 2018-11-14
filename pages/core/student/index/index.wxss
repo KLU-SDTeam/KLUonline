@@ -1,0 +1,133 @@
+/**index.wxss**/
+
+.main-box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc; 
+  position: absolute;
+  overflow: hidden;
+}
+
+.header {
+ background-color: #32CD32; 
+ display: flex;
+ flex-direction:row;
+ position: relative;
+
+ height: 200rpx;
+ width: 100%;
+}
+.logo{
+  margin-top: 60rpx;
+  margin-left: 20rpx;
+  height: 110rpx;
+  width: 110rpx;
+  border-radius: 60%;
+ 
+}
+.userinfo{
+  margin-left: 20rpx;
+  margin-top:60rpx;
+  flex-direction:column;
+}
+.userinfo-nickname{
+  font-family: "微软雅黑";
+  color: white;
+  font-size:35rpx;
+}
+.shezhi{
+  height: 60rpx;
+  width: 60rpx;
+  margin-left:360rpx;
+  margin-top: 90rpx;
+   border-radius: 60%;
+}
+/*以上是headerd的样式*/
+/*
+.cost{
+  display: flex;
+  flex-direction:row; 
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+.cost-box{
+    
+    width: 31%;
+    margin-left: 15rpx;
+    
+
+}
+.balance{
+  height: 70rpx;
+  background-color: 	#FF8800 ;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  text-align: center;
+}
+.cost-of-month{
+  height: 70rpx;
+  background-color: #0088A8;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  text-align: center;
+}
+.income-month{
+   height: 70rpx;
+   background-color: #00AA55;
+   border-top-right-radius: 5%;
+   border-top-left-radius: 5%;
+   text-align: center;
+}
+.wenzi{
+  color:rgb(83, 81, 77); 
+  font-family: "微软雅黑";
+  font-size: 25rpx;
+  margin-top: 5rpx;
+  text-align: center;
+} */
+/*以上是消费余额的样式*/
+
+.nav{
+  display: flex;
+  flex-direction:row; 
+  position: relative;
+  
+}
+.nav-title{
+  position: relative;
+  height: 37rpx;
+  width: 100%;
+  /* background-color:#dad5d5  ; */
+  font-size: 25rpx;
+  padding-left: 15rpx;
+  line-height:-25rpx;
+  font-family: "微软雅黑";
+}
+.nav-box{
+  width: 25%;
+  padding-top: 40rpx;
+  padding-bottom: 20rpx;
+  text-align: center; 
+  background-color: white;
+  border-right:1px solid  #ccc;
+   border-radius: 1pt;
+}
+.nav-sign image{
+  height: 50rpx;
+  width: 50rpx;
+  
+}
+.nav-content{
+  font-family: "微软雅黑";
+  font-size: 25rpx;
+  color:rgb(83, 81, 77); 
+}
+.bottom-box{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  background-color:rgb(232, 223, 241); 
+}

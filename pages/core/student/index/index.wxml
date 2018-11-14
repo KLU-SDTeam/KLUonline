@@ -1,0 +1,116 @@
+<!--index.wxml-->
+<view class='main-box'>
+    <view class="header">
+          <view>
+              <image class='logo' src='../../../../images/icon/logo.jpg'></image>
+          </view>
+          <view class="userinfo">
+              <view>
+                <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+              </view>
+              <view>
+                <text class="userinfo-nickname">学工号：</text>
+              </view>
+          </view> 
+          <view>
+              <image class='shezhi' src='../../../../images/icon/shezhi.jpg'></image>
+          </view>
+          </view>
+
+    <!-- <view class='cost'>
+                <view class='cost-box'>
+                    <view class='balance'>---</view>
+                    <view class='wenzi'>校园卡余额</view>
+                </view>
+                <view class='cost-box'>
+                    <view class='cost-of-month'>---</view>
+                    <view class='wenzi'>本月消费</view>
+                </view>
+                <view class='cost-box'>
+                    <view class='income-month'>---</view>
+                    <view class='wenzi'>本月收入</view>
+                </view>
+    </view> -->
+
+    <view class='nav-title'>我的大学</view>
+    <view class='nav'>
+            
+            <view class='nav-box' catchtap='onTapToMygrowth'>
+                <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                  <view class='nav-content'>我的成长</view>
+            </view>
+            
+            <view class='nav-box'>
+                  <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                  <view class='nav-content'>我的借阅</view>
+            </view>
+            <view class='nav-box'>
+                  <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                    <view class='nav-content'>我的申请</view>
+            </view>
+            <view class='nav-box' catchtap='onTapToTimetable'>
+                  <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                    <view class='nav-content'>我的课表</view>
+            </view>
+    </view>
+    <view class='nav-title'>校园卡</view>
+    <view class='nav'>
+            <view class='nav-box'>
+                <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                  <view class='nav-content'>微信校园卡</view>
+            </view>
+            <view class='nav-box'>
+                  <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                  <view class='nav-content'>我要充值</view>
+            </view>
+            <view class='nav-box'>
+                  <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                    <view class='nav-content'>消费记录</view>
+            </view>
+            <view class='nav-box'>
+                  <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                    <view class='nav-content'>领款记录</view>
+            </view>
+    </view>
+    <view class='nav-title'>校园服务</view>
+    <view class='nav'>
+            <view class='nav-box'>
+                <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                  <view class='nav-content'>宿舍电量</view>
+            </view>
+            <view class='nav-box'>
+                  <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                    <view class='nav-content'>我的酬金</view>
+            </view>
+          <view class='nav-box'>
+                  <view class='nav-sign'><image src=''></image></view>
+                    <view class='nav-content'></view>
+          </view>
+          <view class='nav-box'>
+                  <view class='nav-sign'><image src=''></image></view>
+                    <view class='nav-content'></view>
+          </view>
+    </view>        
+    <view class='nav-title'>校园资讯</view>
+    <view class='nav'>
+            <view class='nav-box' catchtap='onTapToPost'>
+                <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                  <view class='nav-content'>通知公告</view>
+            </view>
+            <view class='nav-box' catchtap='onTapToLecture'>
+                  <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
+                  <view class='nav-content'>讲座资讯</view>
+            </view>
+            <view class='nav-box'>
+                  <view class='nav-sign'><image src=''></image></view>
+                    <view class='nav-content'></view>
+            </view>
+            <view class='nav-box'>
+                  <view class='nav-sign'><image src=''></image></view>
+                    <view class='nav-content'></view>
+            </view>
+    </view>
+    
+</view>
+
+ 
