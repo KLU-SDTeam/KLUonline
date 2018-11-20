@@ -1,11 +1,12 @@
 
 
 class DBPost {
-  constructor(postId) {
+  constructor(postId,newsId) {
     this.storageKeyName = 'postList';
-    this.postId = postId;
-  }
 
+    this.postId = postId;
+  
+  }
   //获取指定id号的文章数据
   getPostItemById() {
      var postsData = this.getAllPostData();
@@ -37,6 +38,14 @@ class DBPost {
     var res = wx.getStorageSync(this.storageKeyName);
     if (!res) {
       res = require('../data/lectureData.js').postList;
+      //this.initPostList(res);
+    }
+    return res;
+  }
+  getAllNewsData() {
+    var res = wx.getStorageSync(this.storageKeyName);
+    if (!res) {
+      res = require('../data/noticeData.js').newsLists;
       //this.initPostList(res);
     }
     return res;

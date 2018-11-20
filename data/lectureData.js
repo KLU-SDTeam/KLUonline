@@ -1,6 +1,6 @@
-var postList = [
-    
-  {
+var postList = 
+
+  [{
     postId: 111,
     title: "人工智能",
     time: "2018-05-30",

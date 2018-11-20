@@ -1,14 +1,27 @@
-<scroll-view class="page_list" scroll-y="true" bindscrolltolower="loadMore" bindscrolltoupper="refresh">
+<view class='main-box'>
+  <scroll-view scroll-x="true" class="menubar">
+      <view class="menu">
+          <text class="{{dataId=='0'?'active':''}}" bindtap="check" id="top" data-id="0">讲座</text>
+          <text class="{{dataId=='1'?'active':''}}" bindtap="check" id="shehui" data-id="1">通知</text>
+          <text class="{{dataId=='2'?'active':''}}" bindtap="check" id="guonei" data-id="2">大数据</text>
+          <text class="{{dataId=='3'?'active':''}}" bindtap="check" id="guoji" data-id="3">大健康</text>
+          <text class="{{dataId=='4'?'active':''}}" bindtap="check" id="yule" data-id="4">教育与科学</text>
+          <text class="{{dataId=='5'?'active':''}}" bindtap="check" id="tiyu" data-id="5">人文</text>
+          
+      </view>
+  </scroll-view>
+  <scroll-view class="page_list" scroll-y="true" bindscrolltolower="loadMore" bindscrolltoupper="refresh">
 
-  <view wx:for="{{postList}}" wx:key>
+    <view wx:for="{{postList}}" wx:key>
 
-    <view data-post-id="{{item.postId}}" class="item"  catchtap='onTapToDetail'>
-      <view class="news-item">
-        <view class="title">{{item.title}}</view>
-        <text class="time">{{item.time}}</text>
-        <view class="desc">{{item.desc}}</view>
+      <view data-post-id="{{item.postId}}" class="item"  catchtap='onTapToDetail'>
+        <view class="news-item">
+          <view class="title">{{item.title}}</view>
+          <text class="time">{{item.time}}</text>
+          <view class="desc">{{item.desc}}</view>
 
+        </view>
       </view>
     </view>
-  </view>
-</scroll-view>
+  </scroll-view>
+</view> 

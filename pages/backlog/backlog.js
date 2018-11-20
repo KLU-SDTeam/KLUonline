@@ -1,21 +1,18 @@
-// pages/notice/notice.js
-var noticeData = require("../../data/noticeData.js");
+// pages/backlog/backlog.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
-    this.setData({
-      newsList: noticeData.newsList
-    });
-    
+  onLoad: function (options) {
+
   },
 
   /**

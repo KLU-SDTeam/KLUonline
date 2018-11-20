@@ -16,22 +16,6 @@
               <image class='shezhi' src='../../../../images/icon/shezhi.jpg'></image>
           </view>
           </view>
-
-    <!-- <view class='cost'>
-                <view class='cost-box'>
-                    <view class='balance'>---</view>
-                    <view class='wenzi'>校园卡余额</view>
-                </view>
-                <view class='cost-box'>
-                    <view class='cost-of-month'>---</view>
-                    <view class='wenzi'>本月消费</view>
-                </view>
-                <view class='cost-box'>
-                    <view class='income-month'>---</view>
-                    <view class='wenzi'>本月收入</view>
-                </view>
-    </view> -->
-
     <view class='nav-title'>我的大学</view>
     <view class='nav'>
             
@@ -91,7 +75,7 @@
                     <view class='nav-content'></view>
           </view>
     </view>        
-    <view class='nav-title'>校园资讯</view>
+    <!--<view class='nav-title'>校园资讯</view>
     <view class='nav'>
             <view class='nav-box' catchtap='onTapToPost'>
                 <view class='nav-sign'><image src='../../../../images/icon/shezhi.jpg'></image></view>
@@ -109,7 +93,7 @@
                   <view class='nav-sign'><image src=''></image></view>
                     <view class='nav-content'></view>
             </view>
-    </view>
+    </view>-->
     
 </view>
 
