@@ -1,25 +1,22 @@
 <import src="/utils/ui-tmpl/tabbar/tabbar-tpl.wxml" />
 <view class='main-box'>
   <scroll-view scroll-x="true" class="menubar">
-      <view class="menu">
-          <text class="{{dataId=='0'?'active':''}}" bindtap="check" id="top" data-id="0">讲座</text>
-          <text class="{{dataId=='1'?'active':''}}" bindtap="check" id="shehui" data-id="1">通知</text>
-          <text class="{{dataId=='2'?'active':''}}" bindtap="check" id="guonei" data-id="2">分院</text>    
-      </view>
+    <view class="menu">
+      <text class="{{dataId=='0'?'active':''}}" bindtap="check" id="top" data-id="0">讲座</text>
+      <text class="{{dataId=='1'?'active':''}}" bindtap="check" id="shehui" data-id="1">通知</text>
+      <text class="{{dataId=='2'?'active':''}}" bindtap="check" id="guonei" data-id="2">分院</text>
+    </view>
   </scroll-view>
   <scroll-view class="page_list" scroll-y="true" bindscrolltolower="loadMore" bindscrolltoupper="refresh">
-
     <view wx:for="{{postList}}" wx:key>
-
-      <view data-post-id="{{item.postId}}" class="item"  catchtap='onTapToDetail'>
+      <view data-post-id="{{item.postId}}" class="item" catchtap='onTapToDetail'>
         <view class="news-item">
           <view class="title">{{item.title}}</view>
           <text class="time">{{item.time}}</text>
           <view class="desc">{{item.desc}}</view>
-
         </view>
       </view>
     </view>
   </scroll-view>
   <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
-</view> 
+</view>

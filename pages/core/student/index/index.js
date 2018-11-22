@@ -10,8 +10,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    routers: [
-      {
+    routers: [{
         name: '成长',
         url: '../my-growth/my-growth',
         icon: '/images/icon/settings.jpg'
