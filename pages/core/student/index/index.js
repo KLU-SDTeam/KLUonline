@@ -28,7 +28,7 @@ Page({
       },
       {
         name: '课表',
-        url: '',
+        url: '../timetable/timetable',
         icon: '/images/icon/settings.jpg'
       },
       {
@@ -96,24 +96,4 @@ Page({
       hasUserInfo: true
     })
   },
-  onTapToMygrowth:function(event) {
-    wx.navigateTo({
-      url: '../my-growth/my-growth',
-    })
-  },
-  onTapToTimetable: function (event) {
-    wx.navigateTo({
-      url: '../timetable/timetable',
-    })
-  },
-  onTapToPost: function (event) {
-    wx.navigateTo({
-      url: '../../../notice/notice',
-    })
-  },
-  onTapToLecture: function (event) {
-    wx.navigateTo({
-      url: '../../../lecture/lecture',
-    })
-  }
 })
