@@ -4,7 +4,7 @@
 <view class='main-box'>
   <view class="header">
     <view>
-      <image class='logo' src='../../../../images/icon/logo.jpg'></image>
+      <image class='logo' src='/images/icon/logo.jpg'></image>
     </view>
     <view class="userinfo">
       <view>
@@ -15,91 +15,32 @@
       </view>
     </view>
     <view>
-      <image class='settings' src='../../../../images/icon/settings.jpg'></image>
+      <image class='settings' src='/images/icon/settings.jpg'></image>
     </view>
   </view>
-  <view class='nav-title'>我的大学</view>
-  <view class='nav'>
-
-    <view class='nav-box' catchtap='onTapToMygrowth'>
-      <view class='nav-sign'>
-        <image src='../../../../images/icon/settings.jpg'></image>
+  <scroll-view class='index-scroll' scroll-x="true">
+    <view class='nav-title'>我的大学</view>
+    <view class="weui-grids">
+      <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
+        <navigator url="{{item.url}}">
+          <view class="weui-grid__icon">
+            <image src=" {{item.icon}}" mode="scaleToFill" />
+          </view>
+          <text class="weui-grid__label">{{item.name}}</text>
+        </navigator>
       </view>
-      <view class='nav-content'>成长</view>
     </view>
-
-    <view class='nav-box'>
-      <view class='nav-sign'>
-        <image src='../../../../images/icon/settings.jpg'></image>
+    <view class='nav-title'>校园服务</view>
+    <view class="weui-grids">
+      <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
+        <navigator url="{{item.url}}">
+          <view class="weui-grid__icon">
+            <image src=" {{item.icon}}" mode="scaleToFill" />
+          </view>
+          <text class="weui-grid__label">{{item.name}}</text>
+        </navigator>
       </view>
-      <view class='nav-content'>阅读</view>
     </view>
-    <view class='nav-box'>
-      <view class='nav-sign'>
-        <image src='../../../../images/icon/settings.jpg'></image>
-      </view>
-      <view class='nav-content'>事务</view>
-    </view>
-    <view class='nav-box' catchtap='onTapToTimetable'>
-      <view class='nav-sign'>
-        <image src='../../../../images/icon/settings.jpg'></image>
-      </view>
-      <view class='nav-content'>课表</view>
-    </view>
-  </view>
-  <view class='nav-title'>校园卡</view>
-  <view class='nav'>
-    <view class='nav-box'>
-      <view class='nav-sign'>
-        <image src='../../../../images/icon/settings.jpg'></image>
-      </view>
-      <view class='nav-content'>微信校园卡</view>
-    </view>
-    <view class='nav-box'>
-      <view class='nav-sign'>
-        <image src='../../../../images/icon/settings.jpg'></image>
-      </view>
-      <view class='nav-content'>我要充值</view>
-    </view>
-    <view class='nav-box'>
-      <view class='nav-sign'>
-        <image src='../../../../images/icon/settings.jpg'></image>
-      </view>
-      <view class='nav-content'>消费记录</view>
-    </view>
-    <view class='nav-box'>
-      <view class='nav-sign'>
-        <image src='../../../../images/icon/settings.jpg'></image>
-      </view>
-      <view class='nav-content'>领款记录</view>
-    </view>
-  </view>
-  <view class='nav-title'>校园服务</view>
-  <view class='nav'>
-    <view class='nav-box'>
-      <view class='nav-sign'>
-        <image src='../../../../images/icon/settings.jpg'></image>
-      </view>
-      <view class='nav-content'>宿舍电量</view>
-    </view>
-    <view class='nav-box'>
-      <view class='nav-sign'>
-        <image src='../../../../images/icon/settings.jpg'></image>
-      </view>
-      <view class='nav-content'>我的酬金</view>
-    </view>
-    <view class='nav-box'>
-      <view class='nav-sign'>
-        <image src=''></image>
-      </view>
-      <view class='nav-content'></view>
-    </view>
-    <view class='nav-box'>
-      <view class='nav-sign'>
-        <image src=''></image>
-      </view>
-      <view class='nav-content'></view>
-    </view>
-  </view>
+  </scroll-view>
   <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
 </view>

@@ -160,7 +160,7 @@ function tabbarinit(pageIndex) {
 function tabbarmain(bindName = "tabdata", id, target, pageIndex) {
   var that = target;
   var bindData = {};
-  var otabbar = tabbarinit();
+  var otabbar = tabbarinit(pageIndex);
   otabbar[id]['iconPath'] = otabbar[id]['selectedIconPath'] //换当前的icon
   otabbar[id]['current'] = 1;
   bindData[bindName] = otabbar

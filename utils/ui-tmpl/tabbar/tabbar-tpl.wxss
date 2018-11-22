@@ -23,5 +23,5 @@
 }
 
 .tabBartext {
-  color: lawngreen;
+  color: black;
 }
