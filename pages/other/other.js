@@ -1,4 +1,5 @@
 // pages/other/other.js
+var tplTabbar = require('../../utils/ui-tmpl/tabbar/tabbar-tpl.js');
 Page({
 
   /**
@@ -12,7 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    tplTabbar.tabbar("tabBar", 3, this, 0);
   },
 
   /**

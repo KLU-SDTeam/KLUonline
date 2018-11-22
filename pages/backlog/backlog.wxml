@@ -1,2 +1,7 @@
 <!--pages/backlog/backlog.wxml-->
-<text>pages/backlog/backlog.wxml</text>
+<import src="/utils/ui-tmpl/tabbar/tabbar-tpl.wxml" />
+<text>待开发</text>
+<view class='main-box'>
+  <!-- TODO -->
+  <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+</view>

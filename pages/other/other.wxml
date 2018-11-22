@@ -1,2 +1,7 @@
 <!--pages/other/other.wxml-->
+<import src="/utils/ui-tmpl/tabbar/tabbar-tpl.wxml" />
 <text>此内容暂未开放</text>
+<view class='main-box'>
+  <!-- TODO -->
+  <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+</view>

@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var tplTabbar = require('../../../../utils/ui-tmpl/tabbar/tabbar-tpl.js');
 
 Page({
  
@@ -17,6 +18,7 @@ Page({
     })
   },
   onLoad: function () {
+    tplTabbar.tabbar("tabBar", 0, this, 0);
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

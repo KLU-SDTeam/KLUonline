@@ -37,7 +37,7 @@
   color: white;
   font-size:35rpx;
 }
-.shezhi{
+.settings{
   height: 60rpx;
   width: 60rpx;
   margin-left:360rpx;
