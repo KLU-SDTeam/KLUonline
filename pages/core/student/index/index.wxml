@@ -41,6 +41,17 @@
         </navigator>
       </view>
     </view>
+    <view class='nav-title'>校园服务</view>
+    <view class="weui-grids">
+      <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
+        <navigator url="{{item.url}}">
+          <view class="weui-grid__icon">
+            <image src=" {{item.icon}}" mode="scaleToFill" />
+          </view>
+          <text class="weui-grid__label">{{item.name}}</text>
+        </navigator>
+      </view>
+    </view>
   </scroll-view>
   <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
 </view>

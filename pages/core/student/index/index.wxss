@@ -168,3 +168,15 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+/*TODO 后期要做修改*/
+.index-scroll{
+   height: 75%;
+    background: #f4f5f6;
+    position: relative;
+    left:0;
+    top:0;
+    z-index: 99;
+    white-space: nowrap;
+    display: flex;
+}
