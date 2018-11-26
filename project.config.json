@@ -4,16 +4,16 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.3.0",
-	"appid": ,
-	"projectname": "web-kaiyuan",
+	"libVersion": "2.4.0",
+	"appid": "wx13acb26409a8bb15",
+	"projectname": "web_kaiyuan",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -36,30 +36,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 0,
 			"list": [
 				{
 					"id": 0,
-					"name": "second",
-					"pathName": "pages/core/student/index/index",
-					"query": ""
-				},
-				{
-					"id": 1,
-					"name": "third",
-					"pathName": "pages/lecture/lecture-detail/lecture-detail",
+					"name": "ddd",
+					"pathName": "pages/core/student/my-growth/evaluation/evaluation",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "lecture",
-					"pathName": "pages/lecture/lecture",
-					"query": ""
-				},
-				{
-					"id": 3,
-					"name": "detail",
-					"pathName": "pages/lecture-detail/leture-detail",
+					"name": "sss",
+					"pathName": "pages/core/student/index/index",
 					"query": ""
 				}
 			]

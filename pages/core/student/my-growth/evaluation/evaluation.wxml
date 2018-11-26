@@ -1,0 +1,9 @@
+<!--pages/core/student/my-growth/evaluation/evaluation.wxml-->
+<view class='main-box'>
+    <view class='header' wx:for="{{evaluations}}">{{item.grade}}</view>
+    <scroll-view class='evaluation-scroll' scroll-y="true">
+        <view class='evaluation-box' wx:for="{{evaluations}}">
+            <view class='content'>{{item.content}}</view>
+        </view>
+    </scroll-view>
+</view>

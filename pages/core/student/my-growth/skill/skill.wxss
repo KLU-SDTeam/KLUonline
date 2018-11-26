@@ -1,0 +1,45 @@
+/* pages/core/student/my-growth/skill/skill.wxss */
+.main-box{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+}
+.header{
+  top: 0;
+  position: relative;
+  width: 100%;
+  height: 60rpx;
+  border-bottom: #ccc 1px solid;
+  font-size: 30rpx;
+  padding-top: 15rpx;
+  padding-left: 10rpx;
+}
+.skill-scroll{
+    height: 100%;
+    background: white;
+    position: relative;
+    left:0;
+    top:0;
+    z-index: 99;
+    display: flex;
+}
+.skill-box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  
+}
+.content{
+  width: 25%;
+  height:200rpx;
+  text-align: center;
+  border: rgb(172, 47, 58) 1px solid;
+  font-size: 30rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  background-color: rgb(13, 228, 138);
+  border-radius: 10rpx;
+}

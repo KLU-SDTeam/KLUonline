@@ -1,0 +1,12 @@
+<!--pages/core/student/my-growth/skill/skill.wxml-->
+<view class='main-box'>
+    <view class='header'>我的技能</view>
+    <scroll-view class='skill-scroll' scroll-y="true">
+        <view class='skill-box' wx:for="{{skills}}">
+            <view class='content'>{{item.skill_1}}</view>
+            <view class='content'>{{item.skill_2}}</view>
+            <view class='content'>{{item.skill_2}}</view>
+            <view class='content'>{{item.skill_4}}</view>
+        </view>
+    </scroll-view>
+</view>

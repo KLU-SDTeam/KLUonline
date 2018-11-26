@@ -1,0 +1,12 @@
+<!--pages/core/student/my-growth/honor/honor.wxml-->
+<view class='main-box'>
+    <view class='header'>证书</view>
+    <scroll-view class='honor-scroll' scroll-y="true">
+        <view class='honor-box' wx:for="{{honors}}">
+            <view class='content'>{{item.honor_1}}</view>
+            <view class='content'>{{item.honor_2}}</view>
+            <view class='content'>{{item.honor_2}}</view>
+            <view class='content'>{{item.honor_4}}</view>
+        </view>
+    </scroll-view>
+</view>

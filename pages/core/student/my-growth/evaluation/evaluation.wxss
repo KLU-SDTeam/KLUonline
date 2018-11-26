@@ -1,0 +1,42 @@
+/* pages/core/student/my-growth/evaluation/evaluation.wxss */
+.main-box{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+}
+.header{
+  top: 0;
+  position: relative;
+  width: 100%;
+  height: 60rpx;
+  border-bottom: #ccc 1px solid;
+  font-size: 30rpx;
+  padding-top: 15rpx;
+  padding-left: 10rpx;
+  text-align: center;
+}
+.evaluation-scroll{
+    height: 100%;
+    background: white;
+    position: relative;
+    left:0;
+    top:0;
+    z-index: 99;
+    display: flex;
+}
+.evaluation-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  
+}
+.content{
+  text-indent: 2em;
+  font-size: 30rpx;
+  font-family: '微软雅黑';
+  color: #34495e;
+  padding: 20rpx;
+}
