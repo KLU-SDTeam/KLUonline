@@ -1,0 +1,15 @@
+<!--pages/employment/employment-detail/employment-detail.wxml-->
+<view class='box'>
+  <view class='item-title'>
+    <text decode="{{true}}">{{post.jobName}}</text>
+  </view>
+  <view>{{post.requrie}}</view>
+  <view class='item-desc'>
+    <view>
+      <text>{{post.desc}}</text>
+    </view>
+    <view>
+      <text>{{post.requirements}}</text>
+    </view>
+  </view>
+</view>

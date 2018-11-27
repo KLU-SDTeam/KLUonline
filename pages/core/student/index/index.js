@@ -37,7 +37,7 @@ Page({
       },
       {
         name: '实习/就业',
-        url: '',
+        url: '../empl/empl',
         icon: '/images/icon/settings.jpg'
       },
       {

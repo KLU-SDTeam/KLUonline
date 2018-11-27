@@ -1,0 +1,16 @@
+/* pages/employment/employment-detail/employment-detail.wxss */
+.box{
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column; 
+}
+.item-title{
+  font-size: 50rpx;
+  font-family: "微软雅黑";
+  text-align: left;
+}
+.item-desc{
+font-family: "微软雅黑";
+font-size: 35rpx;
+}

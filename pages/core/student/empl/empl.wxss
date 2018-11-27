@@ -1,0 +1,38 @@
+.list {
+  height: 175rpx;
+  text-align: center;
+  padding-top: 15px;
+  float: left;
+  flex-direction: row;
+
+}
+
+.list-icon {
+  width: 100%;
+  font-size: 30rpx;
+  font-family: "微软雅黑";
+  text-align: left;
+  padding-left: 30rpx;
+  box-shadow: 10px 10px 10px #e0e0e0;
+}
+
+.list-time {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-left: 75%;
+  line-height: 40rpx;
+}
+
+.f30 {
+  font-size: 30rpx;
+  text-align: right;
+}
+
+.f-b {
+  font-weight: bold;
+  color: black;
+}
+
+.f-gray {
+  color: gray;
+}
