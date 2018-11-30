@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -12,10 +12,10 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
-	"appid": " ",
+	"appid": "",
 	"projectname": "web_KLU",
 	"debugOptions": {
-		"hidedInDevtools": [ ] 
+		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
 	"condition": {

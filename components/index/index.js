@@ -39,7 +39,7 @@ Component({
     },
     {
       name: '竞赛',
-      url: '',
+      url: '../competition/competition',
       icon: "../../../../images/icon/settings.jpg"
     },
     {

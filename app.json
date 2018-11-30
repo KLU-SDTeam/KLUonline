@@ -7,6 +7,8 @@
     "pages/core/student/my-growth/honor/honor",
     "pages/core/student/my-growth/evaluation/evaluation",
     "pages/core/student/timetable/timetable",
+    "pages/core/student/competition/competition",
+    "pages/core/student/competition/details/details",
     "pages/core/student/empl/empl",
     "pages/core/student/empl/empl-detail/empl-detail",
     "pages/lecture/lecture",

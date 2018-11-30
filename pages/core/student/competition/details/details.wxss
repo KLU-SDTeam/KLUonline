@@ -1,0 +1,9 @@
+.time {
+  margin: 20rpx;
+  padding-left: 20rpx;
+  width: 260rpx;
+}
+
+.content {
+  margin: 20rpx;
+}
