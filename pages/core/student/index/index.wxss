@@ -1,5 +1,6 @@
 /**index.wxss**/
-.main-box{
+
+.main-box {
   width: 100%;
   height: 100%;
   display: flex;
@@ -10,173 +11,110 @@
 }
 
 .header {
- background-color: #32CD32; 
- display: flex;
- flex-direction:row;
- position: relative;
- height: 200rpx;
- width: 100%;
+  background-color: #32cd32;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  /* 这里需要调整图片大小，这个抬头header的尺寸太高了 */
+  height: 280rpx;
+  width: 100%;
 }
 
-.logo{
+.logo {
   margin-top: 60rpx;
   margin-left: 20rpx;
-  height: 110rpx;
-  width: 110rpx;
+  height: 90rpx;
+  width: 90rpx;
   border-radius: 60%;
- 
 }
-.userinfo{
+
+.userinfo {
   margin-left: 20rpx;
-  margin-top:60rpx;
-  flex-direction:column;
+  margin-top: 60rpx;
+  flex-direction: column;
 }
-.userinfo-nickname{
+
+.userinfo-nickname {
   font-family: "微软雅黑";
   color: white;
-  font-size:30rpx;
+  font-size: 30rpx;
 }
-.settings{
+
+.settings {
   height: 60rpx;
   width: 60rpx;
-  margin-left:360rpx;
+  margin-left: 360rpx;
   margin-top: 90rpx;
-   border-radius: 60%;
+  border-radius: 60%;
 }
 
-.nav-title{
+.index-scroll {
+  height: 75%;
+  background: #f4f5f6;
   position: relative;
-  height: 37rpx;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  white-space: nowrap;
+  display: flex;
+}
+
+.nav-tabs {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 120rpx;
   width: 100%;
-  background-color: #ccc;
-  font-size: 25rpx;
-  padding-left: 15rpx;
-  line-height:-25rpx;
-  font-family: "微软雅黑";
 }
 
-.weui-grids {
-    position: relative;
-    overflow: hidden;
-}
- 
- .weui-grids:before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    height: 1px;
-    border-top: 1px solid #d9d9d9;
-    color: #d9d9d9;
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: scaleY(0.5);
-    transform: scaleY(0.5);
-} 
- 
- .weui-grids:after {
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1px;
-    bottom: 0;
-    border-left: 1px solid #d9d9d9;
-    color: #d9d9d9;
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: scaleX(0.5);
-    transform: scaleX(0.5);
-} 
-  
-.weui-grid {
-    position: relative;
-    float: left;
-    padding: 20px 10px;
-    width: 25%;
-    box-sizing: border-box;
-}
- 
- .weui-grid:before {
-    content: " ";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 1px;
-    bottom: 0;
-    border-right: 1px solid #d9d9d9;
-    color: #d9d9d9;
-    -webkit-transform-origin: 100% 0;
-    transform-origin: 100% 0;
-    -webkit-transform: scaleX(0.5);
-    transform: scaleX(0.5);
-} 
- 
- .weui-grid:after {
-    content: " ";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 1px;
-    border-bottom: 1px solid #d9d9d9;
-    color: #d9d9d9;
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-transform: scaleY(0.5);
-    transform: scaleY(0.5);
-} 
- 
-  .weui-grid:active {
-    background-color: #ECECEC;
-}  
- 
-.weui-grid__bg {
-    position: relative;
-    float: left;
-    padding: 0px 0px;
-    width: 100%;
-    box-sizing: border-box;
-}
- 
-.weui-grid__icon {
-    width: 32px;
-    height: 32px;
-    margin: 0 auto;
-}
- 
- 
-.weui-grid__icon image {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
- 
-.weui-grid__icon + .weui-grid__label {
-    margin-top: 5px;
-}
- 
- 
-.weui-grid__label {
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    color: #000;
-    font-size: 14px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+.tab-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fcfcfc;
+  height: 120rpx;
+  width: 25%;
 }
 
-/*TODO 后期要做修改*/
-.index-scroll{
-   height: 75%;
-    background: #f4f5f6;
-    position: relative;
-    left:0;
-    top:0;
-    z-index: 99;
-    white-space: nowrap;
-    display: flex;
+.tab-text {
+  font-size: 24rpx;
+  line-height: 35rpx;
+  color: #5f5f5f;
 }
+
+.iconPath {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.tab-content {
+  flex: 1;
+}
+
+.default {
+  line-height: 75rpx;
+  text-align: center;
+  flex: 1;
+  color: #eee;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+
+.active {
+  line-height: 75rpx;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+
+.show {
+  display: block;
+  flex: 1;
+}
+
+.hidden {
+  display: none;
+  flex: 1;
+} 

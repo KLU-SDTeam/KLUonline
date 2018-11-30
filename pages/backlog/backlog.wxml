@@ -3,5 +3,4 @@
 <text>待开发</text>
 <view class='main-box'>
   <!-- TODO -->
-  <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
 </view>

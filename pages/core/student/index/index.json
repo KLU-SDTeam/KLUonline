@@ -1,2 +1,8 @@
 {
+  "usingComponents" :{
+    "component_index" : "/components/index/index",
+    "component_backlog": "/components/backlog/backlog",
+    "component_information": "/components/information/information",
+    "component_other": "/components/other/other"
+  }
 }

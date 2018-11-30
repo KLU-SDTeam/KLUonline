@@ -12,10 +12,10 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
-	"appid": "wx7cf679621f65ba8d",
-	"projectname": "web_kaiyuan",
+	"appid": " ",
+	"projectname": "web_KLU",
 	"debugOptions": {
-		"hidedInDevtools": []
+		"hidedInDevtools": [ ] 
 	},
 	"isGameTourist": false,
 	"condition": {
@@ -39,14 +39,8 @@
 			"current": 0,
 			"list": [
 				{
-					"id": 0,
-					"name": "ddd",
-					"pathName": "pages/core/student/my-growth/evaluation/evaluation",
-					"query": ""
-				},
-				{
 					"id": -1,
-					"name": "sss",
+					"name": "stu",
 					"pathName": "pages/core/student/index/index",
 					"query": ""
 				}

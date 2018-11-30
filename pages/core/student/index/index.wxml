@@ -2,56 +2,40 @@
 <import src="/utils/ui-tmpl/tabbar/tabbar-tpl.wxml" />
 
 <view class='main-box'>
-  <view class="header">
-    <view>
-      <image class='logo' src='/images/icon/logo.jpg'></image>
-    </view>
-    <view class="userinfo">
-      <view>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            <view class="header">
+              <view>
+                <image class='logo' src='/images/icon/logo.jpg'></image>
+              </view>
+              <view class="userinfo">
+                <view>
+                  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+                </view>
+                <view>
+                  <text class="userinfo-nickname">学工号：</text>
+                </view>
+              </view>
+              <view>
+                <image class='settings' src='/images/icon/settings.jpg'></image>
+              </view>
+            </view>
+      <scroll-view class='index-scroll' scroll-y="true">
+            <view hidden="{{currentTab == 0? false: true}}">
+              <component_index/>
+            </view>
+            <view hidden="{{currentTab == 1? false: true}}">
+              <component_backlog/>
+            </view>
+            <view hidden="{{currentTab == 2? false: true}}">
+              <component_information/>
+            </view>
+            <view hidden="{{currentTab == 3? false: true}}">
+              <component_other/>
+            </view>
+      </scroll-view>
+      <view class="nav-tabs">
+            <view class="tab-list {{currentTab == idx ? 'active' : 'default' }}" wx:for="{{items}}" wx:key="prototype" wx:for-index="idx" wx:for-item="item" data-current="{{idx}}" bindtap="swichNav">
+              <image class="iconPath" wx:for-index="idx" data-current="{{idx}}" src="{{currentTab == idx ? item.selectedIconPath : item.iconPath }}"></image>
+              <text class="tab-text" wx:for-index="idx" data-current="{{idx}}" src="{{currentTab == idx ? item.selectedIconPath : item.iconPath }}">{{item.text}}</text>
+            </view>
       </view>
-      <view>
-        <text class="userinfo-nickname">学工号：</text>
-      </view>
-    </view>
-    <view>
-      <image class='settings' src='/images/icon/settings.jpg'></image>
-    </view>
-  </view>
-  <scroll-view class='index-scroll' scroll-y="true">
-    <view class='nav-title'>我的大学</view>
-    <view class="weui-grids">
-      <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
-        <navigator url="{{item.url}}">
-          <view class="weui-grid__icon">
-            <image src=" {{item.icon}}" mode="scaleToFill" />
-          </view>
-          <text class="weui-grid__label">{{item.name}}</text>
-        </navigator>
-      </view>
-    </view>
-    <view class='nav-title'>校园服务</view>
-    <view class="weui-grids">
-      <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
-        <navigator url="{{item.url}}">
-          <view class="weui-grid__icon">
-            <image src=" {{item.icon}}" mode="scaleToFill" />
-          </view>
-          <text class="weui-grid__label">{{item.name}}</text>
-        </navigator>
-      </view>
-    </view>
-    <view class='nav-title'>校园服务</view>
-    <view class="weui-grids">
-      <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
-        <navigator url="{{item.url}}">
-          <view class="weui-grid__icon">
-            <image src=" {{item.icon}}" mode="scaleToFill" />
-          </view>
-          <text class="weui-grid__label">{{item.name}}</text>
-        </navigator>
-      </view>
-    </view>
-  </scroll-view>
-  <template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
 </view>

@@ -1,6 +1,4 @@
 /**app.wxss**/
-@import "/utils/ui-tmpl/tabbar/tabbar-tpl.wxss";
-
 .container {
   height: 100%;
   display: flex;

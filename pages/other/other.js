@@ -1,5 +1,4 @@
 // pages/other/other.js
-var tplTabbar = require('../../utils/ui-tmpl/tabbar/tabbar-tpl.js');
 Page({
 
   /**

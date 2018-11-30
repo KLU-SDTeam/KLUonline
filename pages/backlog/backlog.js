@@ -1,6 +1,4 @@
 // pages/backlog/backlog.js
-var tplTabbar = require('../../utils/ui-tmpl/tabbar/tabbar-tpl.js');
-
 Page({
 
   /**

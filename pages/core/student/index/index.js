@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
 const app = getApp()
-var tplTabbar = require('../../../../utils/ui-tmpl/tabbar/tabbar-tpl.js');
 
 Page({
  
@@ -10,46 +9,29 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    routers: [{
-        name: '成长',
-        url: '../my-growth/my-growth',
-        icon: '/images/icon/settings.jpg'
+
+    currentTab: 0,
+    items: [
+      {
+        "iconPath": "/images/icon/tab-item.png",
+        "selectedIconPath": "/images/icon/tab-item-selected.png",
+        "text": "首页"
       },
       {
-        name: '阅读',
-        url: '',
-        icon: '/images/icon/settings.jpg'
+        "iconPath": "/images/icon/tab-item.png",
+        "selectedIconPath": "/images/icon/tab-item-selected.png",
+        "text": "待办"
       },
       {
-        name: '事务',
-        url: '',
-        icon: '/images/icon/settings.jpg'
+        "iconPath": "/images/icon/tab-item.png",
+        "selectedIconPath": "/images/icon/tab-item-selected.png",
+        "text": "资讯"
       },
       {
-        name: '课表',
-        url: '../timetable/timetable',
-        icon: '/images/icon/settings.jpg'
-      },
-      {
-        name: '竞赛',
-        url: '',
-        icon: '/images/icon/settings.jpg'
-      },
-      {
-        name: '实习/就业',
-        url: '../empl/empl',
-        icon: '/images/icon/settings.jpg'
-      },
-      {
-        name: '社团',
-        url: '',
-        icon: '/images/icon/settings.jpg'
-      },
-      {
-        name: '成绩查询',
-        url: '',
-        icon: '/images/icon/settings.jpg'
-      },
+        "iconPath": "/images/icon/tab-item.png",
+        "selectedIconPath": "/images/icon/tab-item-selected.png",
+        "text": "其它"
+      }
     ]
   },
   //事件处理函数
@@ -58,8 +40,20 @@ Page({
       url: '../logs/logs'
     })
   },
+
+
+  swichNav: function (e) {
+    let that = this;
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
+  },
+
   onLoad: function () {
-    tplTabbar.tabbar("tabBar", 0, this, 0);
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

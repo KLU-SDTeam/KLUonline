@@ -1,7 +1,5 @@
 // pages/uestcNews/uestcNews.js
 import { DBPost } from '../../cache/DBPost.js';
-var tplTabbar = require('../../utils/ui-tmpl/tabbar/tabbar-tpl.js');
-
 
 Page({
   data: {},
