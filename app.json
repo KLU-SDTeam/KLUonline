@@ -12,9 +12,7 @@
     "pages/core/student/empl/empl",
     "pages/core/student/empl/empl-detail/empl-detail",
     "pages/lecture/lecture",
-    "pages/lecture/lecture-detail/lecture-detail",
-    "pages/backlog/backlog",
-    "pages/other/other"
+    "pages/lecture/lecture-detail/lecture-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
