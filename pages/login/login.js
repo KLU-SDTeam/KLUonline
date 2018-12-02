@@ -49,7 +49,7 @@ Page({
       if (account == 'stu' && passwd == '000') {
         console.log("登录学生界面");
         wx.redirectTo({
-          url: '../core/student/index/index',
+          url: '../student/index/index',
         })
       }
       if (account == 'tea' && passwd == '111') {

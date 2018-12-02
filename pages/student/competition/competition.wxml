@@ -1,12 +1,10 @@
 <view wx:for="{{postList}}" wx:key>
   <view data-post-id="{{item.postId}}" catchtap='onTapToDetail'>
-
-    <view class='list-item' style='background:{{item.color}}'>
+    <view class='list-item'>
       <view class='list-item-left'>
         <text class='list-item-title'>{{item.comtitle}}</text>
         <text class='list-item-time'>{{item.comtime}}</text>
       </view>
-      <image class="list-item-icon" src="../../../../images/icon/competition.png" />
     </view>
   </view>
 </view>

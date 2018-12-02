@@ -15,41 +15,29 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  /* 这里需要调整图片大小，这个抬头header的尺寸太高了 */
-  height: 280rpx;
+  /* 这里需要调整,抬头header的尺寸太高了 */
+  height: 100rpx;
   width: 100%;
 }
 
-.logo {
-  margin-top: 60rpx;
-  margin-left: 20rpx;
-  height: 90rpx;
-  width: 90rpx;
-  border-radius: 60%;
-}
-
-.userinfo {
-  margin-left: 20rpx;
-  margin-top: 60rpx;
-  flex-direction: column;
-}
-
-.userinfo-nickname {
+.nickname {
   font-family: "微软雅黑";
   color: white;
   font-size: 30rpx;
+  height: 60rpx;
+  width: 60%;
 }
 
 .settings {
   height: 60rpx;
   width: 60rpx;
-  margin-left: 360rpx;
-  margin-top: 90rpx;
+  margin-left: 300rpx;
+  margin-top: 25rpx;
   border-radius: 60%;
 }
 
 .index-scroll {
-  height: 75%;
+  height: 85%;
   background: #f4f5f6;
   position: relative;
   left: 0;
@@ -117,4 +105,4 @@
 .hidden {
   display: none;
   flex: 1;
-} 
+}

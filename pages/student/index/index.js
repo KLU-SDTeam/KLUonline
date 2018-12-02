@@ -3,36 +3,33 @@
 const app = getApp()
 
 Page({
- 
+
   data: {
     motto: '',
     userInfo: {},
+    user_id: '2017xxxxxx',
+    nickName: 'xxxx',
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
 
     currentTab: 0,
-    items: [
-      {
-        "iconPath": "/images/icon/tab-item.png",
-        "selectedIconPath": "/images/icon/tab-item-selected.png",
-        "text": "首页"
-      },
-      {
-        "iconPath": "/images/icon/tab-item.png",
-        "selectedIconPath": "/images/icon/tab-item-selected.png",
-        "text": "待办"
-      },
-      {
-        "iconPath": "/images/icon/tab-item.png",
-        "selectedIconPath": "/images/icon/tab-item-selected.png",
-        "text": "资讯"
-      },
-      {
-        "iconPath": "/images/icon/tab-item.png",
-        "selectedIconPath": "/images/icon/tab-item-selected.png",
-        "text": "其它"
-      }
-    ]
+    items: [{
+      "iconPath": "/images/tab-item.png",
+      "selectedIconPath": "/images/tab-item-selected.png",
+      "text": "首页"
+    }, {
+      "iconPath": "/images/tab-item.png",
+      "selectedIconPath": "/images/tab-item-selected.png",
+      "text": "待办"
+    }, {
+      "iconPath": "/images/tab-item.png",
+      "selectedIconPath": "/images/tab-item-selected.png",
+      "text": "资讯"
+    }, {
+      "iconPath": "/images/tab-item.png",
+      "selectedIconPath": "/images/tab-item-selected.png",
+      "text": "其它"
+    }]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -41,8 +38,7 @@ Page({
     })
   },
 
-
-  swichNav: function (e) {
+  swichNav: function(e) {
     let that = this;
     if (this.data.currentTab === e.target.dataset.current) {
       return false;
@@ -53,13 +49,18 @@ Page({
     }
   },
 
-  onLoad: function () {
+  onLoad: function() {
+    var title = "学工号： ".concat(" ", this.data.user_id, " ", this.data.nickName);
+    console.log(title);
+    this.setData({
+      userTitle: title,
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {

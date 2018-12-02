@@ -2,18 +2,10 @@
 <view class='main-box'>
   <view class="header">
     <view>
-      <image class='logo' src='/images/icon/logo.jpg'></image>
-    </view>
-    <view class="userinfo">
-      <view>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </view>
-      <view>
-        <text class="userinfo-nickname">学工号：</text>
-      </view>
+      <text class="nickname">{{userTitle}}</text>
     </view>
     <view>
-      <image class='settings' src='/images/icon/settings.jpg'></image>
+      <image class='settings' src='/images/settings.jpg'></image>
     </view>
   </view>
   <scroll-view class='index-scroll' scroll-y="true">
