@@ -1,4 +1,12 @@
 <!--components/index/index.wxml-->
+ <view class="header">
+    <view>
+      <text class="nickname">{{userTitle}}</text>
+    </view>
+    <view>
+      <image class='settings' src='/images/settings.jpg'></image>
+    </view>
+  </view>
     <view class='nav-title'>我的大学</view>
     <view class="weui-grids">
       <view class="weui-grid" wx:for="{{routers}}" wx:key="name">

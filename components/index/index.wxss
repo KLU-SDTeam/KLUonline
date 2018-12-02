@@ -1,5 +1,30 @@
 /* components/index/index.wxss */
+.header {
+  background-color: #32cd32;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  /* 这里需要调整,抬头header的尺寸太高了 */
+  height: 100rpx;
+  width: 100%;
+}
 
+.nickname {
+  font-family: "微软雅黑";
+  color: white;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  height: 60rpx;
+  width: 60%;
+}
+
+.settings {
+  height: 60rpx;
+  width: 60rpx;
+  margin-left: 280rpx;
+  margin-top: 25rpx;
+  border-radius: 60%;
+}
 .nav-title {
   position: relative;
   height: 37rpx;

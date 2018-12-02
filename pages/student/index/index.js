@@ -7,8 +7,6 @@ Page({
   data: {
     motto: '',
     userInfo: {},
-    user_id: '2017xxxxxx',
-    nickName: 'xxxx',
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
 
@@ -50,11 +48,6 @@ Page({
   },
 
   onLoad: function() {
-    var title = "学工号： ".concat(" ", this.data.user_id, " ", this.data.nickName);
-    console.log(title);
-    this.setData({
-      userTitle: title,
-    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

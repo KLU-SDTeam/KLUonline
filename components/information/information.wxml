@@ -1,2 +1,21 @@
 <!--components/information/information.wxml-->
-<text>components/information/information.wxml</text>
+<view class='main-box'>
+  <scroll-view scroll-x="true" class="menubar">
+    <view class="menu">
+      <text class="{{dataId=='0'?'active':''}}" bindtap="check" id="lecture" data-id="0">讲座</text>
+      <text class="{{dataId=='1'?'active':''}}" bindtap="check" id="notic" data-id="1">通知</text>
+      <text class="{{dataId=='2'?'active':''}}" bindtap="check" id="collage" data-id="2">分院</text>
+    </view>
+  </scroll-view>
+  <scroll-view class="page_list" scroll-y="true" bindscrolltolower="loadMore" bindscrolltoupper="refresh">
+    <view wx:for="{{postList}}" wx:key>
+      <view data-post-id="{{item.postId}}" class="item" catchtap='onTapToDetail'>
+        <view class="news-item">
+          <view class="title">{{item.title}}</view>
+          <text class="time">{{item.time}}</text>
+          <view class="desc">{{item.desc}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
