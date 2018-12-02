@@ -1,6 +1,2 @@
 <!--pages/backlog/backlog.wxml-->
-<import src="/utils/ui-tmpl/tabbar/tabbar-tpl.wxml" />
-<text>待开发</text>
-<view class='main-box'>
-  <!-- TODO -->
-</view>
+<text>pages/backlog/backlog.wxml</text>

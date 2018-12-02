@@ -1,5 +1,2 @@
 <!--pages/other/other.wxml-->
-<text>此内容暂未开放</text>
-<view class='main-box'>
-  <!-- TODO -->
-</view>
+<text>pages/other/other.wxml</text>
