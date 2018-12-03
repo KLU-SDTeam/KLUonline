@@ -13,20 +13,17 @@
 .index-scroll {
   height: 90%;
   background: #f4f5f6;
-  position: relative;
-  left: 0;
-  top: 0;
-  z-index: 99;
-  white-space: nowrap;
+
   display: flex;
 }
 
 .nav-tabs {
   display: flex;
   flex-direction: row;
-  position: relative;
+  position: fixed;
   height: 120rpx;
   width: 100%;
+  bottom: 0px;
 }
 
 .tab-list {

@@ -1,7 +1,7 @@
 var numCount = 6;
 var numSlot = 5;
-var mW = 400;
-var mH = 400;
+var mW = 300;
+var mH = 300;
 var mCenter = mW / 2; //中心点
 var mAngle = Math.PI * 2 / numCount; //角度
 var mRadius = mCenter - 60; //半径(减去的值用于给绘制的文本留空间)

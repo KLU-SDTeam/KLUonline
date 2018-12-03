@@ -12,7 +12,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
-	"appid": "",
+	"appid": " ",
 	"projectname": "web_KLU",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -39,9 +39,9 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "stu",
-					"pathName": "pages/core/student/index/index",
+					"pathName": "pages/student/index/index",
 					"query": ""
 				}
 			]

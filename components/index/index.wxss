@@ -6,9 +6,18 @@
   position: relative;
   /* 这里需要调整,抬头header的尺寸太高了 */
   height: 100rpx;
-  width: 100%;
+  width: 100%;  
 }
-
+.index-scroll {
+  height: 90%;
+  background: #f4f5f6;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  white-space: nowrap;
+  display: flex;
+}
 .nickname {
   font-family: "微软雅黑";
   color: white;

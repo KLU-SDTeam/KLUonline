@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class='main-box'>
-  <scroll-view class='index-scroll' scroll-y="true">
+  <view class='index-scroll' >
     <view hidden="{{currentTab == 0? false: true}}">
       <component_index/>
     </view>
@@ -13,7 +13,7 @@
     <view hidden="{{currentTab == 3? false: true}}">
       <component_other/>
     </view>
-  </scroll-view>
+  </view>
   <view class="nav-tabs">
     <view class="tab-list {{currentTab == idx ? 'active' : 'default' }}" wx:for="{{items}}" wx:key="prototype" wx:for-index="idx" wx:for-item="item" data-current="{{idx}}" bindtap="swichNav">
       <image class="iconPath" wx:for-index="idx" data-current="{{idx}}" src="{{currentTab == idx ? item.selectedIconPath : item.iconPath }}"></image>
