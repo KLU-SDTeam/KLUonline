@@ -1,4 +1,6 @@
 // components/information/information.js
+var listDB = require('../../cache/listDB.js');
+
 Component({
   /**
    * 组件的属性列表
@@ -11,7 +13,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    postList: [{
+    def_lectureList: [{
       postId: 111,
       title: "人工智能",
       time: "2018-05-30",
@@ -69,13 +71,28 @@ Component({
     }, ]
   },
 
+  //TODO: 1.页面传还需要优化
+  lifetimes: {
+    attached: function() {
+      listDB.put(listDB.postListId.key_lecture, this.data.def_lectureList);
+      this.setData({
+        postList: listDB.get(listDB.postListId.key_lecture)
+      })
+    },
+    moved: function() {
+
+    },
+    detached: function() {
+
+    },
+  },
+
   /**
    * 组件的方法列表
    */
   methods: {
     onTapToDetail(event) {
       var postId = event.currentTarget.dataset.postId;
-      console.log(postId);
       wx.navigateTo({
         url: "../../lecture/lecture-detail/lecture-detail?id=" + postId,
       })
