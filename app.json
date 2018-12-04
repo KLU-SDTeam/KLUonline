@@ -11,6 +11,7 @@
     "pages/student/competition/details/details",
     "pages/student/empl/empl",
     "pages/student/empl/empl-detail/empl-detail",
+    "pages/student/association/association",
     "pages/lecture/lecture-detail/lecture-detail"
   ],
   "window": {

@@ -1,0 +1,12 @@
+<view wx:for="{{postList}}" wx:key>
+  <view data-post-id="{{item.postId}}" class='list' catchtap='onTapToDetail'>
+    <view class='st-pic'>
+      <image class='list-left' src="{{item.url}}" mode="aspectFit"></image>
+    </view>
+    <view class='list-right'>
+      <view>社团名称：{{item.name}}</view>
+      <view>社团宣言：{{item.declaration}}</view>
+      <view>社团荣誉：{{item.honor}}</view>
+    </view>
+  </view>
+</view>

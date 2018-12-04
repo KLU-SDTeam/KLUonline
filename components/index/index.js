@@ -21,8 +21,7 @@ Component({
         name: '成长',
         url: '../my-growth/my-growth',
         icon: "../../../../images/settings.jpg"
-      },
-      {
+      }, {
         name: '阅读',
         url: '',
         icon: "../../../../images/settings.jpg"
@@ -31,28 +30,23 @@ Component({
         name: '事务',
         url: '',
         icon: "../../../../images/settings.jpg"
-      },
-      {
+      }, {
         name: '课表',
         url: '../timetable/timetable',
         icon: "../../../../images/settings.jpg"
-      },
-      {
+      }, {
         name: '竞赛',
         url: '../competition/competition',
         icon: "../../../../images/settings.jpg"
-      },
-      {
+      }, {
         name: '实习/就业',
         url: '../empl/empl',
         icon: "../../../../images/settings.jpg"
-      },
-      {
+      }, {
         name: '社团',
-        url: '',
+        url: '../association/association',
         icon: "../../../../images/settings.jpg"
-      },
-      {
+      }, {
         name: '成绩查询',
         url: '',
         icon: "../../../../images/settings.jpg"

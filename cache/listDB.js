@@ -12,6 +12,7 @@ var postListId = {
   key_collage: "collageList",
   key_emp: "empList",
   key_competition: "compList",
+  key_association: "associationList"
 }
 
 function get(k) {

@@ -1,0 +1,25 @@
+.list-left {
+  width: 120rpx;
+  height: 100rpx;
+  padding-top: 20rpx;
+}
+
+.list {
+  border: 1rpx solid #fff;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+  background-clip: padding-box;
+  background-color: #fff;
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 10px 10px #e0e0e0;
+}
+
+.list-right {
+  padding-top: 10rpx;
+  width: 80%;
+  font-size: 25rpx;
+  text-align: left;
+  display: block;
+}
