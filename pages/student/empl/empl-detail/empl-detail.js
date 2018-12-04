@@ -15,7 +15,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      post: listDB.getListItemById(listDB.postListId.key_competition, options.id)
+      post: listDB.getListItemById(listDB.postListId.key_emp, options.id)
     })
   },
 
