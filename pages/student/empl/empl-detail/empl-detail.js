@@ -1,5 +1,5 @@
 // pages/employment/employment-detail/employment-detail.js
-import { DBPost } from '../cache/DBPost.js';
+var listDB = require('../../../../cache/listDB.js');
 
 Page({
 
@@ -14,11 +14,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var postId = options.id;
-    this.dbPost = new DBPost(postId);
-    this.postData = this.dbPost.getPostItemById().data;
     this.setData({
-      post: this.postData
+      post: listDB.getListItemById(listDB.postListId.key_competition, options.id)
     })
   },
 

@@ -1,8 +1,7 @@
 <!--pages/lecture/lecture-detail/lecture-detail.wxml-->
 <view class='main-box'>
-    <view class='title'>{{post.title}}</view>
-    <view class='time'>{{post.time}}</view>
-    <image class='img'>{{post.Img}}</image>
-    <view class='detail'>{{post.detail}}</view>
+  <view class='title'>{{post.title}}</view>
+  <view class='time'>{{post.time}}</view>
+  <image class='img'>{{post.Img}}</image>
+  <view class='detail'>{{post.detail}}</view>
 </view>
-
