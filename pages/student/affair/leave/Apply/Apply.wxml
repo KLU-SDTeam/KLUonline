@@ -1,0 +1,22 @@
+<view wx:for="{{def_ApplyList}}" wx:key>
+  <view class="title">申请</view>
+   <view class='list lbsj'>
+    <view class='date'>班级：<input name="Class" placeholder="请输入班级" 
+    bindinput="classInput"/></view>
+  </view>
+    <view class='list lbsj'>
+    <view class='date'>姓名：<input name="FullName" placeholder="请输入姓名" 
+    bindinput="FullNameInput"/></view>
+  </view>
+   <view class='list lbsj'>
+    <view class='date'>学号：<input name="StudentID" placeholder="请输入学号" 
+    bindinput="StudentIDInput"/></view>
+  </view>
+  <view class='list lbsj'>
+    <view class='date'>事由：<input name="Cause" placeholder="请输入事由" 
+    bindinput="CauseInput"/></view>
+  </view>
+</view>
+<view>
+  <button class='btn' type='primary'>提交</button>
+</view>

@@ -1,0 +1,18 @@
+
+<view class="title">详情</view>
+<view class='list lbsj'>
+<view class='date'>班级：{{post.Class}}</view>
+</view>
+<view class='list lbsj'>
+<view class='date'>姓名：{{post.Fullname}}</view>
+</view>
+<view class='list lbsj'>
+<view class='date'>学号：{{post.StudentID}}</view>
+</view>
+<view class='list lbsj'>
+<view class='date'>事由：{{post.Cause}}</view>
+</view>
+<view class='two'>
+  <button>pass</button>
+  <button>faie</button>
+</view>

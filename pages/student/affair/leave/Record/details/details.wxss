@@ -1,0 +1,36 @@
+.title {
+  font-size: 18pt;
+  font-weight: bold;
+  line-height: 150%;
+  margin-bottom: 15rpx;
+  color: #222;
+  text-align: center;
+  font-family: 'microsoft yahei'；
+}
+
+.lbsj{
+  border-radius: 15rpx ;
+  border: 1rpx solid  #9ed8bc;
+}
+
+.list {
+  width: 96%;
+  height: 100%;
+  margin: 20rpx auto;
+}
+
+.date {
+  width: 96%;
+  margin: left;
+  font-size: 36rpx;
+  font-family: 'microsoft yahei'；
+}
+
+.two{
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  height: 80rpx;
+  background-color: #ffffff;
+  border-radius: 10px;
+}

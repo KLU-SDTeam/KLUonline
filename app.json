@@ -12,7 +12,11 @@
     "pages/student/empl/empl",
     "pages/student/empl/empl-detail/empl-detail",
     "pages/student/association/association",
-    "pages/lecture/lecture-detail/lecture-detail"
+    "pages/lecture/lecture-detail/lecture-detail",
+    "pages/student/affair/Transaction/Transaction",
+    "pages/student/affair/leave/Record/Record",
+    "pages/student/affair/leave/Apply/Apply",
+    "pages/student/affair/leave/Record/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",

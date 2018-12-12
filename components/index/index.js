@@ -28,7 +28,7 @@ Component({
       },
       {
         name: '事务',
-        url: '',
+        url: '../affair/Transaction/Transaction',
         icon: "../../../../images/settings.jpg"
       }, {
         name: '课表',

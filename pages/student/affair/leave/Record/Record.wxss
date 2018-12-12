@@ -1,0 +1,71 @@
+.title {
+  font-size: 18pt;
+  font-weight: bold;
+  line-height: 150%;
+  margin-bottom: 15rpx;
+  color: #222;
+  text-align: center;
+  font-family: 'microsoft yahei'；
+}
+
+.list {
+  width: 96%;
+  height: 100%;
+  display: flex;
+  margin: 20rpx auto;
+}
+.lbsj{
+  border-radius: 15rpx ;
+  border: 1rpx solid  #9ed8bc;
+  
+}
+
+.btn {
+  width: 30%;
+  margin-top: 20rpx;
+  background-color: #32cd32;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  width: 80%;
+  margin: left;
+  font-size: 36rpx;
+  background-color: #B0E0E6;
+  font-family: 'microsoft yahei'；
+}
+
+.date-a {
+  width: 20%;
+  margin: left;
+  font-size: 36rpx;
+  background-color: #32cd32;
+  font-family: 'microsoft yahei'；
+}
+.date-b {
+  width: 20%;
+  margin: left;
+  font-size: 36rpx;
+  background-color: #B0E0E6;
+  font-family: 'microsoft yahei'；
+}
+.date-c {
+  width: 20%;
+  margin: left;
+  font-size: 36rpx;
+  background-color: rgba(204, 194, 47, 0.473);
+  font-family: 'microsoft yahei'；
+}
+.date-d {
+  width: 20%;
+  margin: left;
+  font-size: 36rpx;
+  background-color: rgb(216, 78, 14);
+  font-family: 'microsoft yahei'；
+}
+
