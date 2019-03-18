@@ -13,7 +13,7 @@ var postListId = {
   key_emp: "empList",
   key_competition: "compList",
   key_association: "associationList",
-  key_Record: "RecordList"
+  key_Record: "recordList"
 }
 
 function get(k) {

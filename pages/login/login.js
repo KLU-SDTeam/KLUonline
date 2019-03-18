@@ -57,7 +57,7 @@ Page({
       if (account == '2017402249' && passwd == '000') {
         console.log("登录学生界面");
         wx.redirectTo({
-          url: '../student/index/index',
+          url: '../student/index/index?account=' + account,
         })
       }
       if (account == '2016021022' && passwd == '111') {
