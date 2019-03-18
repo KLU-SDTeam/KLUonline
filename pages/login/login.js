@@ -4,6 +4,7 @@
  * 3. 测试账号： stu 000；tea 111；lead 222
  */
 var utils = require('../../utils/utils.js')
+var constant = require('../../cache/constant.js')
 
 Page({
   data: {
@@ -56,8 +57,9 @@ Page({
       //      有的主管（领导）比较关心各种统计数据，所以单独拎出来作一个UI
       if (account == '2017402249' && passwd == '000') {
         console.log("登录学生界面");
+        wx.setStorageSync(constant.USER_ACCOUNT_KEY, account);
         wx.redirectTo({
-          url: '../student/index/index?account=' + account,
+          url: '../student/index/index',
         })
       }
       if (account == '2016021022' && passwd == '111') {

@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 //const app = getApp()
-var constant = require('../../../cache/constant.js')
+//var constant = require('../../../cache/constant.js')
 
 Page({
 
@@ -39,7 +39,5 @@ Page({
 
   onLoad: function(options) {
     console.log("index", " onLoad:");
-    console.log(options.account);
-    wx.setStorageSync(constant.USER_ACCOUNT_KEY, options.account);
   },
 })

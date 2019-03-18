@@ -1,4 +1,6 @@
 // components/index/index.js
+var constant = require('../../cache/constant.js')
+
 Component({
 
   /* 开启全局样式设置 */
@@ -59,10 +61,13 @@ Component({
   /* 组件声明周期函数 */
   lifetimes: {
     attached: function() {
-      var title = "学工号： ".concat(" ", this.data.user_id, " ", this.data.nickName);
+      var user_id = wx.getStorageSync(constant.USER_ACCOUNT_KEY);
+      console.log("index-comp user_id=" + user_id);
+      var title = "学工号： ".concat(" ", user_id, " ", this.data.nickName);
       console.log(title);
       this.setData({
         userTitle: title,
+        user_id: user_id,
       })
     },
     moved: function() {
