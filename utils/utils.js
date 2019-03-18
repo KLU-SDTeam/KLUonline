@@ -17,7 +17,7 @@ function checkAge(age) {
 }
 
 function checkAccount(account) {
-  var accounted = /^\d{16}$/;
+  var accounted = /^\d{10}$/;
   return !accounted.test(account);
 }
 
