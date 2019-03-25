@@ -1,6 +1,6 @@
 /* components/index/index.wxss */
 .header {
-  background-color: #32cd32;
+  background-color: white;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -20,7 +20,7 @@
 }
 .nickname {
   font-family: "微软雅黑";
-  color: white;
+  color: black;
   font-size: 30rpx;
   margin-left: 20rpx;
   height: 60rpx;

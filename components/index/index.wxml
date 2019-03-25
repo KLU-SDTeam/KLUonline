@@ -3,9 +3,10 @@
     <view>
       <text class="nickname">{{userTitle}}</text>
     </view>
-    <view>
-      <image class='settings' src='/images/settings.jpg'></image>
-    </view>
+    <!-- <view>
+      <image class='settings' src='/images/add.png' bindtap='settingTab'></image>
+    </view> -->
+     <menu hidden id='menu' bind:addEvent="_addEvent" bind:deleteLotsEvent="_deleteLotsEvent" />
   </view>
   <scroll-view class='index-scroll' scroll-y="true">
     <view class='nav-title'>我的大学</view>

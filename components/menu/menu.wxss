@@ -1,0 +1,22 @@
+/*悬浮按钮*/
+.buttom{
+  width: 70rpx;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top:20rpx;
+  right: 40rpx;
+  z-index: 1001;
+}
+.drawer_screen {
+  width: 20%;
+  height: 30%;
+  position:fixed;
+  top: 0;
+  right:0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
