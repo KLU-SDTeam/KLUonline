@@ -7,7 +7,7 @@ var utils = require('../../utils/utils.js')
 var constant = require('../../cache/constant.js')
 
 Page({
-  data: {},
+  data: {}, 
 
   // 获取输入账号
   accountInput: function(e) {
@@ -95,7 +95,6 @@ Page({
           })
         },
         complete: function(res) {
-
         },
       })
 
