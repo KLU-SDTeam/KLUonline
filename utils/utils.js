@@ -20,8 +20,6 @@ function checkAccount(account) {
   var accounted = /^\d{10}$/;
   return !accounted.test(account);
 }
-
-
 module.exports = {
   checkPhone: checkPhone,
   checkName: checkName,

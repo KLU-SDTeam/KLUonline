@@ -7,10 +7,7 @@ var utils = require('../../utils/utils.js')
 var constant = require('../../cache/constant.js')
 
 Page({
-  data: {
-    account: '',
-    password: ''
-  },
+  data: {},
 
   // 获取输入账号
   accountInput: function(e) {
@@ -30,6 +27,7 @@ Page({
   login: function() {
     var account = this.data.account;
     var passwd = this.data.password;
+    console.log(account, passwd);
 
     //TODO 账号和密码的规范化
     if (account.length == 0 || passwd.length == 0) {
@@ -45,29 +43,62 @@ Page({
         showCancel: false
       })
     } else {
-      // 这里修改成跳转的页面
-      wx.showToast({
-        title: '登录成功',
-        icon: 'success',
-        duration: 2000
+      wx.request({
+        url: "",
+        method: "GET",
+        data: {
+          user_no: account,
+          password: passwd,
+        },
+        header: {
+          'content-type': 'application/x-www-form-urlencoded' // 默认值
+        },
+        dataType: 'json',
+        success: function(res) {
+          console.log(res.data)
+          var type = JSON.stringify(res.data.type);
+          var info = JSON.stringify(res.data.info);
+          if (type == 1) {
+            wx.showToast({
+              title: '登录成功',
+              icon: 'loading',
+              duration: 3000
+            })
+            wx.switchTab({
+              url: '../student/index/index',
+            })
+          } else if (type == 2) {
+            wx.showToast({
+              title: '登录成功',
+              icon: 'loading',
+              duration: 3000
+            })
+            wx.redirectTo({
+              url: '../teacher/index/index',
+            })
+          } else {
+            wx.showModal({
+              title: "信息提示",
+              content: info
+            })
+          }
+        },
+        fail: function(res) {
+          wx.showToast({
+
+            title: '服务器网络错误,请稍后重试',
+
+            icon: 'loading',
+
+            duration: 1500
+
+          })
+        },
+        complete: function(res) {
+
+        },
       })
-      //TODO：这里太丑了，要改,初步设想是：通过account在后台数据库中的搜寻，由服务器
-      //      段返回一个类型码：学生、教师、主管（且有的教师和主管还有兼职的情况），
-      //      由对应的类型码加载指定界面和数据，学生的最简单，所以先做学生的。
-      //      有的主管（领导）比较关心各种统计数据，所以单独拎出来作一个UI
-      if (account == '2017402249' && passwd == '000') {
-        console.log("登录学生界面");
-        wx.setStorageSync(constant.USER_ACCOUNT_KEY, account);
-        wx.redirectTo({
-          url: '../student/index/index',
-        })
-      }
-      if (account == '2016021022' && passwd == '111') {
-        console.log("登录教师界面");
-      }
-      if (account == 'lead' && passwd == '222') {
-        console.log("登录主管界面");
-      }
+
     }
   }
 })
