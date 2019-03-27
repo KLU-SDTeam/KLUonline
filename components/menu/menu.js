@@ -39,10 +39,35 @@ Component({
         })
       }
     },
-    add: function () {
-      console.log("tap add");
-      this.triggerEvent("addEvent")
-      this.showOrHide()
+    doScan: function () {
+      // console.log("do scan");
+      // this.triggerEvent("addEvent")
+      // this.showOrHide()
+      var that = this;
+      var show;
+      wx.scanCode({
+        onlyFromCamera: true,
+        success: (res) => {
+          var result = JSON.stringify(res);
+          wx.showModal({
+            title: "扫码结果",
+            content: result,
+            duration: 2000
+          });
+          wx.showToast({
+            title: '成功',
+            icon: 'success',
+            duration: 1500
+          })
+        },
+        fail: (res) => {
+          wx.showToast({
+            title: '失败',
+            icon: 'success',
+            duration: 2000
+          })
+        }
+      })
     },
     deleteLots: function () {
       console.log("tap deleteLots");

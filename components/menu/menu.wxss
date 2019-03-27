@@ -10,13 +10,14 @@
   z-index: 1001;
 }
 .drawer_screen {
-  width: 20%;
-  height: 30%;
+  width: 16%;
+  height: 29%;
   position:fixed;
-  top: 0;
-  right:0;
+  top: 10rpx;
+  right:15rpx;
+  border-radius:6px;
   z-index: 1000;
-  background: #000;
-  opacity: 0.5;
+  background:#3C3C3C;
+  opacity: 0.8;
   overflow: hidden;
 }
