@@ -13,7 +13,9 @@ var postListId = {
   key_emp: "empList",
   key_competition: "compList",
   key_association: "associationList",
-  key_Record: "recordList"
+  key_Record: "recordList",
+  key_score: "scoreList",
+  key_exam: "examList",
 }
 
 function get(k) {

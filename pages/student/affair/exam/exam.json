@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "考场查询",
+    "usingComponents": {
+      "Select": "/components/select/select"
+    }
+}
