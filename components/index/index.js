@@ -50,7 +50,7 @@ Component({
         icon: "../../../../images/settings.jpg"
       }, {
         name: '成绩查询',
-        url: '../scorequery/scorequery',
+        url: '',
         icon: "../../../../images/settings.jpg"
       },
     ],

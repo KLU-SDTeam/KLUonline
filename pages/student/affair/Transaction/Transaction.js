@@ -35,7 +35,7 @@ Page({
     },
     {
       name: '考场查询',
-      url: '../exam/exam',
+      url: '',
       icon: '../../../../../images/settings.jpg'
     },
     {

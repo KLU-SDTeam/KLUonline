@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "成绩查询",
-  "usingComponents": {
-      "Select": "/components/select/select"
-    }
-}
