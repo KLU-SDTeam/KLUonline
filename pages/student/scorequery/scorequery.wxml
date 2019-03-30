@@ -1,0 +1,14 @@
+<view class='tbox'>
+  <Select prop-array='{{semester}}' bind:myget='getDate' class='sel_box'></Select>
+  <button class='button-cx' bindtap='scorequery'>查询</button>
+</view>
+<view class='a_list' wx:for="{{scoreList}}" wx:key>
+  <view data-post-id="{{item.postId}}">
+    <view>课程：{{item.subject}}</view>
+    <view class='b_list'>
+      <view>学分：{{item.credit}}</view>
+      <view>成绩：{{item.result}}</view>
+      <view>绩点：{{item.point}}</view>
+    </view>
+  </view>
+</view>
