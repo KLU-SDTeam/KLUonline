@@ -1,2 +1,13 @@
 <!--components/backlog/backlog.wxml-->
-<text>components/backlog/backlog.wxml</text>
+<import src="/template/Tplate.wxml" />
+<view>
+<scroll-view class="page_list" scroll-y="true" bindscrolltolower="loadMore" bindscrolltoupper="refresh">
+    <view wx:for="{{postList}}" wx:key>
+      <view data-post-id="{{item.postId}}" class="item" catchtap='onTapToDetail'>
+        <view>
+             <template is="msgItem" data="{{item}}" />
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

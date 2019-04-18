@@ -1,7 +1,5 @@
 <!--pages/lecture/lecture-detail/lecture-detail.wxml-->
+<import src="/template/Tplate.wxml" />
 <view class='main-box'>
-  <view class='title'>{{post.title}}</view>
-  <view class='time'>{{post.time}}</view>
-  <image class='img'>{{post.Img}}</image>
-  <view class='detail'>{{post.detail}}</view>
+   <template is="detail" data="{{post}}" />
 </view>

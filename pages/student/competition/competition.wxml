@@ -1,10 +1,6 @@
+<import src="/template/Tplate.wxml" />
 <view wx:for="{{postList}}" wx:key>
   <view data-post-id="{{item.postId}}" catchtap='onTapToDetail'>
-    <view class='list-item'>
-      <view class='list-item-left'>
-        <text class='list-item-title'>{{item.comtitle}}</text>
-        <text class='list-item-time'>{{item.comtime}}</text>
-      </view>
-    </view>
+     <template is="msgItem" data="{{item}}" />
   </view>
 </view>

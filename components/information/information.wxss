@@ -1,5 +1,5 @@
 /* components/information/information.wxss */
-
+@import "/pages/student/empl/empl.wxss";
 .main-box{
   width: 100%;
   height: 100%;
@@ -49,11 +49,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 10rpx 10rpx;
-  border-bottom: 1rpx solid #eee;
+  height: auto;
+  /* padding: 10rpx 10rpx;
+  border-bottom: 1rpx solid #eee; */
   cursor: pointer;
-  background:#fbf9fe;
- top:100rpx;
+  /* background:#fbf9fe; */
+  top:100rpx;
 }
 
 .news-item {

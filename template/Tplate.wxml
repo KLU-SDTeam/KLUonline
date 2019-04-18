@@ -1,0 +1,26 @@
+<!-- //这一份是ko的 -->
+<template name="msgItem">
+  <view class="list list-icon">
+    <view>
+      <text class="f-b">{{item.jobName}}</text>
+
+    </view>
+    <view class="f-gray">{{item.companyName}}</view>
+    <view class="f-gray">{{item.requrie}}</view>
+    <text class='list-time'>{{item.createTime}}</text>
+  </view>
+</template>
+
+<template name="detail">
+  <view class='item-title'>
+    <text decode="{{true}}">{{post.jobName}}</text>
+  </view>
+  <view>{{post.requrie}}</view>
+  <view class='item-desc' />
+  <view>
+    <text>{{post.desc}}</text>
+  </view>
+  <view>
+    <text>{{post.requirements}}</text>
+  </view>
+</template>

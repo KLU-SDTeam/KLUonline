@@ -4,6 +4,9 @@
   padding-top: 15px;
   float: left;
   flex-direction: row;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   }
 .list-icon {
   width: 100%;

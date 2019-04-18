@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
-	"appid": " ",
-	"projectname": "web_KLU",
+	"appid": "",
+	"projectname": "KLUonline",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

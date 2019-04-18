@@ -1,1 +1,1 @@
-/* components/backlog/backlog.wxss */
+@import "/pages/student/empl/empl.wxss";
